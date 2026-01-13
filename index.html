@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aadhaar Analytics Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-left">
+    <div class="logo">📊</div>
+    <div>
+      <h1>Comprehensive Aadhaar Analytics Dashboard</h1>
+      <p>National Enrolment & Update Monitoring</p>
+    </div>
+  </div>
+
+  <div class="nav-right">
+  <div class="system-status">
+    <span class="dot"></span>
+    <span>System Live: All Regions</span>
+  </div>
+
+  <div class="nav-icons">
+    <i class="fa-regular fa-bell bell"></i>
+    <img src="https://i.pravatar.cc/40" alt="user" class="avatar">
+  </div>
+</div>
+
+</header>
+
+<!-- MAIN LAYOUT -->
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h3>Resource Planning Filters</h3>
+
+    <label>Administrative State</label>
+    <select>
+      <option>Maharashtra</option>
+    </select>
+
+    <label>Cluster / District</label>
+    <select>
+      <option>Mumbai Metropolitan</option>
+    </select>
+
+    <label>Date Analytics Range</label>
+    <input type="date" />
+
+    <div class="forecast">
+      <h4>⚡ Next 7 Days Forecast</h4>
+      <p>Enrolment <span>+4.2%</span></p>
+      <p>Updates <span>+12.8%</span></p>
+    </div>
+
+    <button class="primary-btn">Generate Resource Report</button>
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <!-- TOP GRID -->
+    <div class="grid-top">
+
+      <!-- SPIKE ANALYSIS -->
+      <div class="card large">
+        <h2>Spike Analysis & Predictive Trends</h2>
+        <p>Real-time monitoring with 7-day dotted forecast</p>
+        <div class="loader"></div>
+      </div>
+
+      <!-- AI INSIGHTS -->
+      <div class="card ai">
+        <h2>Predictive AI Insights</h2>
+        <button class="secondary-btn">View Detailed Forecast ↗</button>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM GRID -->
+    <div class="grid-bottom">
+
+      <div class="card">
+        <h2>Regional Intensity Heatmap</h2>
+        <div class="heatmap"></div>
+      </div>
+
+      <div class="card">
+        <h2>Resource Optimization</h2>
+        <p><strong>Augment Staffing: Pune</strong></p>
+        <p>Deploy 12 additional biometric operators</p>
+      </div>
+
+    </div>
+
+  </main>
+</div>
+</body>
+</html>
